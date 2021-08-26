@@ -5,9 +5,7 @@
 
 // Example
 
-
 // Return '12:01:00'.
-
 
 // Return '00:01:00'.
 
@@ -43,7 +41,7 @@ function timeConvert(time: string): string {
 	};
 
 	if (timeArr[2].includes("AM")) {
-        timeArr[2] = timeArr[2].substring(0, 2);
+		timeArr[2] = timeArr[2].substring(0, 2);
 		if (timeArr[0] === "12") {
 			timeArr[0] = "00";
 		}
@@ -54,7 +52,7 @@ function timeConvert(time: string): string {
 
 		timeArr[2] = timeArr[2].substring(0, 2);
 		timeArr[0] = Time24Hour[timeArr[0]].toString();
-        if (timeArr[0] === "0") {
+		if (timeArr[0] === "0") {
 			timeArr[0] = "12";
 		}
 	}
